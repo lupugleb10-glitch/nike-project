@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>NIKE</title>
+
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: Arial;
+            margin: 0;
+        }
+
+        header {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 35px;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        .slide {
+            display: none;
+            padding: 40px;
+            text-align: center;
+            min-height: 400px;
+        }
+
+        .slide:target {
+            display: block;
+        }
+
+        #home {
+            display: block;
+        }
+
+        .slide img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 15px;
+        }
+
+        .product {
+            display: inline-block;
+            background-color: #222;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .product img {
+            width: 220px;
+        }
+
+        footer {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            color: gray;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: red;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>NIKE</h1>
+    <p>JUST DO IT.</p>
+</header>
+
+<nav>
+    <a href="#home">Главная</a>
+    <a href="#catalog">Каталог</a>
+    <a href="#about">О бренде</a>
+</nav>
+
+<!-- Первый слайд -->
+
+<div class="slide" id="home">
+
+    <h2>Добро пожаловать в NIKE!</h2>
+
+    <p>
+        Nike — один из самых известных
+        спортивных брендов в мире.
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700"
+    alt="Красные кроссовки">
+
+    <p>
+        Спортивная обувь, одежда
+        и современный стиль.
+    </p>
+
+    <a href="#catalog" class="button">
+        Перейти в каталог
+    </a>
+
+</div>
+
+<!-- Второй слайд -->
+
+<div class="slide" id="catalog">
+
+    <h2>Наш каталог</h2>
+
+    <div class="product">
+
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700"
+        alt="Красные кроссовки">
+
+        <h3>Red Sneakers</h3>
+
+        <p>Цена: 45 000 ₸</p>
+
+    </div>
+
+    <div class="product">
+
+        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=700"
+        alt="Спортивные кроссовки">
+
+        <h3>Sport Shoes</h3>
+
+        <p>Цена: 52 000 ₸</p>
+
+    </div>
+
+    <div class="product">
+
+        <img src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?w=700"
+        alt="Кроссовки">
+
+        <h3>Air Style</h3>
+
+        <p>Цена: 60 000 ₸</p>
+
+    </div>
+
+    <a href="#home" class="button">Назад</a>
+
+</div>
+
+<!-- Третий слайд -->
+
+<div class="slide" id="about">
+
+    <h2>О бренде Nike</h2>
+
+    <p>
+        Nike была основана в 1964 году.
+        Изначально компания называлась
+        Blue Ribbon Sports.
+    </p>
+
+    <p>
+        Сегодня Nike производит спортивную
+        обувь, одежду и аксессуары.
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?w=700"
+    alt="Спортивная обувь">
+
+    <p>
+        Главная идея бренда — помогать людям
+        заниматься спортом и достигать целей.
+    </p>
+
+    <a href="#home" class="button">На главную</a>
+
+</div>
+
+<footer>
+    <p>NIKE — JUST DO IT.</p>
+    <p>Учебный проект</p>
+</footer>
+
+</body>
+</html>
